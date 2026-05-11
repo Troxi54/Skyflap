@@ -1,0 +1,12 @@
+import PostForm from "./_components/PostForm";
+
+async function Dashboard() {
+  return (
+    <>
+      <h1 className="text-2xl font-bold text-center">Posts</h1>
+      <PostForm />
+    </>
+  );
+}
+
+export default Dashboard;
