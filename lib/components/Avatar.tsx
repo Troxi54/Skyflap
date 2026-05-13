@@ -1,6 +1,7 @@
-import Image, { type ImageProps } from "next/image";
+import Image from "next/image";
+import type { ComponentProps } from "react";
 
-interface Props extends Omit<ImageProps, "alt"> {
+interface Props extends Omit<ComponentProps<typeof Image>, "alt"> {
   username: string;
 }
 

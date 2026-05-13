@@ -1,5 +1,4 @@
-import { RefObject, useEffect, useRef } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import { useEffect, useRef, type RefObject } from "react";
 
 function useIntersection(
   containerRef: RefObject<HTMLElement | null>,

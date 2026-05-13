@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { type ReactNode } from "react";
 import ThemeToggle from "./_components/ThemeToggle";
+import AppLink from "@/lib/components/AppLink";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
@@ -51,8 +52,10 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         </Container>
       </main>
       <footer className="mt-auto px-2">
-        <nav className="flex h-10 items-center justify-center">
-          <p>Footer</p>
+        <nav className="flex h-10 text-sm items-center justify-center gap-4">
+          @2026 Skyflap<AppLink href="/terms">Terms of Service</AppLink>
+          <AppLink href="/privacy">Privacy Policy</AppLink>
+          <AppLink href="/cookies">Cookie Policy</AppLink>
         </nav>
       </footer>
     </ClerkProvider>

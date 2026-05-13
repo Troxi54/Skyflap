@@ -39,8 +39,6 @@
   --border: #ededed;
   --button-text: #ffffff;
 
-  a: 2;
-
   --shadow-card: 0 0 10px 2px rgb(0, 0, 0, 0.04);
   --backdrop: color-mix(transparent, #000000 73%);
 }
