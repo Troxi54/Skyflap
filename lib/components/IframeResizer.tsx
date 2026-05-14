@@ -15,7 +15,6 @@ function IframeResizer({ style, ...props }: Props) {
     if (!iframe || !iframe.contentWindow) return;
 
     const body = iframe.contentWindow.document.body;
-    body.style.margin = "0";
 
     if (observerRef.current) {
       observerRef.current.disconnect();

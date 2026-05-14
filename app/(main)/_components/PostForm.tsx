@@ -115,9 +115,12 @@ function PostForm() {
         {!loadedOnce ? (
           <p className="text-center">Loading...</p>
         ) : (
-          !postBatch.nextCursor && (
+          !postBatch.nextCursor &&
+          (postBatch.data.length === 0 ? (
+            <p className="text-center">No posts found</p>
+          ) : (
             <p className="text-center">No more posts found</p>
-          )
+          ))
         )}
       </Container>
     </>

@@ -1,16 +1,12 @@
-import IframeResizer from "@/lib/components/IframeResizer";
+import TermlyIframe from "@/lib/components/TermlyIframe";
 
 function Privacy() {
   return (
-    <IframeResizer
-      className="w-full"
+    <TermlyIframe
       srcDoc={`
-        <style>
-          body {
-            background: white;
-          }
+      <style>
           [data-custom-class='body'], [data-custom-class='body'] * {
-                  background: white !important;
+                  background: transparent !important;
           }
           [data-custom-class='title'], [data-custom-class='title'] * {
                     font-family: Arial !important;

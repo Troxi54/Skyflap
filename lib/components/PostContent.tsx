@@ -14,7 +14,7 @@ function PostContent({ post, content }: Props) {
     <article className="flex flex-col w-200 max-w-full items-start text-start border border-border p-8 shadow-card rounded-xl gap-2">
       <div className="flex items-center gap-2">
         {avatarUrl && <Avatar username={username} src={avatarUrl} />}
-        <p>@{username}</p>
+        {username && <p>@{username}</p>}
         <p className="text-muted">{timeAgo.format(post.publishedAt, "mini")}</p>
       </div>
       <h2 className="text-xl font-bold">{post.title}</h2>

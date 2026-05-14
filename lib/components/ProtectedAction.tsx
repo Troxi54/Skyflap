@@ -14,7 +14,6 @@ function ProtectedAction({ children }: Props) {
     if (isSignedIn) return;
 
     const href = window.location.href;
-    console.log(href);
 
     openSignIn({
       forceRedirectUrl: href,

@@ -27,8 +27,6 @@ function useIntersection(
     container.appendChild(sentinel);
     observerRef.current.observe(sentinel);
 
-    console.log(sentinel, container);
-
     return () => {
       if (sentinel) {
         container.removeChild(sentinel);
