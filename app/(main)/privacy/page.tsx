@@ -1,9 +1,9 @@
-import TermlyIframe from "@/lib/components/TermlyIframe";
+import TermlyPage from "@/app/(main)/_components/TermlyPage";
 
 function Privacy() {
   return (
-    <TermlyIframe
-      srcDoc={`
+    <TermlyPage
+      html={`
       <style>
           [data-custom-class='body'], [data-custom-class='body'] * {
                   background: transparent !important;
