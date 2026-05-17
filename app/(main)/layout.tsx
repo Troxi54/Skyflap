@@ -52,7 +52,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         </Container>
       </main>
       <footer className="mt-auto px-2">
-        <nav className="flex h-10 text-sm items-center justify-center gap-4">
+        <nav className="flex h-10 text-sm items-center justify-center gap-4 text-center">
           @2026 Skyflap<AppLink href="/terms">Terms of Service</AppLink>
           <AppLink href="/privacy">Privacy Policy</AppLink>
           <AppLink href="/cookies">Cookie Policy</AppLink>
